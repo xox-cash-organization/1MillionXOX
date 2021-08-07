@@ -21,6 +21,9 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const fs = require("fs");
 const mnemonic = fs.readFileSync(".secret").toString().trim();
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 module.exports = {
   /**
@@ -71,7 +74,8 @@ module.exports = {
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
     matic: {
-      provider: () => new HDWalletProvider(mnemonic, "https://rpc-mumbai.matic.today"),
+      provider: () =>
+        new HDWalletProvider(mnemonic, "https://rpc-mumbai.matic.today"),
       network_id: 80001,
       confirmations: 2,
       timeoutBlocks: 200,
@@ -107,5 +111,9 @@ module.exports = {
 
   db: {
     enabled: false
+  },
+  plugins: ["truffle-plugin-verify"],
+  api_keys: {
+    polygonscan: process.env.POLYGONSCAN_API_KEY
   }
 };
