@@ -18,11 +18,12 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
-// const infuraKey = "fj4jll3k.....";
-//
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+const HDWalletProvider = require("@truffle/hdwallet-provider");
+const fs = require("fs");
+const mnemonic = fs.readFileSync(".secret").toString().trim();
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 module.exports = {
   /**
@@ -58,20 +59,37 @@ module.exports = {
     // },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    // ropsten: {
-    // provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/YOUR-PROJECT-ID`),
-    // network_id: 3,       // Ropsten's id
-    // gas: 5500000,        // Ropsten has a lower block limit than mainnet
-    // confirmations: 2,    // # of confs to wait between deployments. (default: 0)
-    // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-    // skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
-    // },
+    ropsten: {
+      provider: () =>
+        new HDWalletProvider(
+          mnemonic,
+          "https://ropsten.infura.io/v3/f9e72d0223644a4fa9a8807426b6dbef"
+        ),
+      network_id: 3, // Ropsten's id
+      gas: 5500000, // Ropsten has a lower block limit than mainnet
+      confirmations: 2, // # of confs to wait between deployments. (default: 0)
+      timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
+      skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
+      networkCheckTimeout: 200000
+    },
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
+    matic_test: {
+      provider: () =>
+        new HDWalletProvider(
+          mnemonic,
+          "https://speedy-nodes-nyc.moralis.io/558120230227a848a2bb7043/polygon/mumbai"
+        ),
+      network_id: 80001,
+      confirmations: 2,
+      timeoutBlocks: 20000,
+      skipDryRun: true,
+      networkCheckTimeout: 20000
+    }
   },
 
   // Set default mocha options here, use special reporters etc.
@@ -82,8 +100,8 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      // version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
-      // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
+      version: "0.8.4" // Fetch exact version from solc-bin (default: truffle's version)
+      // docker: false,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
       //    enabled: false,
@@ -102,5 +120,9 @@ module.exports = {
 
   db: {
     enabled: false
+  },
+  plugins: ["truffle-plugin-verify"],
+  api_keys: {
+    polygonscan: process.env.POLYGONSCAN_API_KEY
   }
 };
