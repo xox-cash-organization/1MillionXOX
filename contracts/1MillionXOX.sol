@@ -1,10 +1,9 @@
 pragma solidity >=0.4.22 <0.9.0;
 
-import "@openzeppelin/token/ERC20/ERC20.sol";
-import "@openzeppelin/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
-contract OneMillionXOX is ERC20, SafeMath {
-  uint8 public decimals = 18;
+contract OneMillionXOX is ERC20 {
   uint public INITIAL_SUPPLY = 1000000;
 
   mapping(address => uint) private balances;
@@ -15,36 +14,40 @@ contract OneMillionXOX is ERC20, SafeMath {
     emit Transfer(address(0), msg.sender, INITIAL_SUPPLY);
   }
 
-  function totalSupply() public view returns (uint) {
+  function decimals() public view virtual override returns (uint8) {
+    return 18;
+  }
+
+  function totalSupply() public view virtual override returns (uint) {
     return INITIAL_SUPPLY - balances[address(0)];
   }
 
-  function balanceOf(address owner) public view returns (uint256) {
+  function balanceOf(address owner) public view virtual override returns (uint256) {
     return balances[owner];
   }
 
-  function allowance(address owner, address spender) public view returns (uint remaining) {
+  function allowance(address owner, address spender) public view virtual override returns (uint remaining) {
     return allowed[owner][spender];
   }
 
-  function approve(address spender, uint spendable) public returns (bool success) {
+  function approve(address spender, uint spendable) public override returns (bool success) {
     allowed[msg.sender][spender] = spendable;
     emit Approval(msg.sender, spender, spendable);
     return true;
   }
 
-  function transfer(address to, uint amount) public returns (bool transferred) {
+  function transfer(address to, uint amount) public virtual override returns (bool transferred) {
     return transferFrom(msg.sender, to, amount);
   }
 
-  function transferFrom(address from, address to, uint amount) public returns (bool) {
-    if (from != msg.sender && allowed[from][msg.sender] > uint(-1)) {
+  function transferFrom(address from, address to, uint amount) public override returns (bool) {
+    if (from != msg.sender && allowed[from][msg.sender] > uint(int(-1))) {
       require(allowed[from][msg.sender] >= amount, "No approval given");
-      allowed[from][msg.sender] = safeSub(allowed[from][msg.sender], amount);
+      allowed[from][msg.sender] = SafeMath.sub(allowed[from][msg.sender], amount);
     }
     require(balances[from] >= amount, "Not enough balance");
-    balances[from] = safeSub(balances[from], amount);
-    balances[to] = safeAdd(balances[to], amount);
+    balances[from] = SafeMath.sub(balances[from], amount);
+    balances[to] = SafeMath.add(balances[to], amount);
     emit Transfer(from, to, amount);
     return true;
   }
