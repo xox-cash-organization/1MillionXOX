@@ -1,9 +1,9 @@
 {
   "contractName": "SafeMath",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Wrappers over Solidity's arithmetic operations. NOTE: `SafeMath` is no longer needed starting with Solidity 0.8. The compiler now has built in overflow checking.\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@openzeppelin/contracts/utils/math/SafeMath.sol\":\"SafeMath\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/utils/math/SafeMath.sol\":{\"keccak256\":\"0x8666f020bd8fc9dc14f07e2ebc52b5f236ab4cdde7c77679b08cb2f94730043b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://163776cbf565c722232393aa2d62cbe8a2ffb5805986abf4906c00e1e07450a6\",\"dweb:/ipfs/QmPZoN9T3cb6o8bGhjBPZcz7im8T8DWhpr3tjLwhJJHx9N\"]}},\"version\":1}",
-  "bytecode": "0x60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220d617419209bf9ad956800d31fc1924ad58252eecebb2740a6cffb6144e77e4c564736f6c63430008060033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220d617419209bf9ad956800d31fc1924ad58252eecebb2740a6cffb6144e77e4c564736f6c63430008060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Wrappers over Solidity's arithmetic operations. NOTE: `SafeMath` is no longer needed starting with Solidity 0.8. The compiler now has built in overflow checking.\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@openzeppelin/contracts/utils/math/SafeMath.sol\":\"SafeMath\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/utils/math/SafeMath.sol\":{\"keccak256\":\"0x8666f020bd8fc9dc14f07e2ebc52b5f236ab4cdde7c77679b08cb2f94730043b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://163776cbf565c722232393aa2d62cbe8a2ffb5805986abf4906c00e1e07450a6\",\"dweb:/ipfs/QmPZoN9T3cb6o8bGhjBPZcz7im8T8DWhpr3tjLwhJJHx9N\"]}},\"version\":1}",
+  "bytecode": "0x60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220765b27ffbbb2106fbdf2c5b485495f3a59fc309d4715543c8391db726c4aea7064736f6c63430008040033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220765b27ffbbb2106fbdf2c5b485495f3a59fc309d4715543c8391db726c4aea7064736f6c63430008040033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
@@ -14,7 +14,9 @@
   "ast": {
     "absolutePath": "@openzeppelin/contracts/utils/math/SafeMath.sol",
     "exportedSymbols": {
-      "SafeMath": [981]
+      "SafeMath": [
+        981
+      ]
     },
     "id": 982,
     "license": "MIT",
@@ -22,7 +24,12 @@
     "nodes": [
       {
         "id": 671,
-        "literals": ["solidity", "^", "0.8", ".0"],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
         "nodeType": "PragmaDirective",
         "src": "33:23:4"
       },
@@ -39,7 +46,9 @@
         },
         "fullyImplemented": true,
         "id": 981,
-        "linearizedBaseContracts": [981],
+        "linearizedBaseContracts": [
+          981
+        ],
         "name": "SafeMath",
         "nameLocation": "406:8:4",
         "nodeType": "ContractDefinition",
@@ -56,7 +65,9 @@
                   "src": "643:124:4",
                   "statements": [
                     {
-                      "assignments": [685],
+                      "assignments": [
+                        685
+                      ],
                       "declarations": [
                         {
                           "constant": false,
@@ -882,7 +893,9 @@
                       }
                     },
                     {
-                      "assignments": [753],
+                      "assignments": [
+                        753
+                      ],
                       "declarations": [
                         {
                           "constant": false,
@@ -2899,7 +2912,10 @@
                           "id": 917,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [4294967278, 4294967278],
+                          "overloadedDeclarations": [
+                            4294967278,
+                            4294967278
+                          ],
                           "referencedDeclaration": 4294967278,
                           "src": "5035:7:4",
                           "typeDescriptions": {
@@ -3206,7 +3222,10 @@
                           "id": 942,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [4294967278, 4294967278],
+                          "overloadedDeclarations": [
+                            4294967278,
+                            4294967278
+                          ],
                           "referencedDeclaration": 4294967278,
                           "src": "5750:7:4",
                           "typeDescriptions": {
@@ -3513,7 +3532,10 @@
                           "id": 967,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [4294967278, 4294967278],
+                          "overloadedDeclarations": [
+                            4294967278,
+                            4294967278
+                          ],
                           "referencedDeclaration": 4294967278,
                           "src": "6626:7:4",
                           "typeDescriptions": {
@@ -3744,7 +3766,9 @@
   "legacyAST": {
     "absolutePath": "@openzeppelin/contracts/utils/math/SafeMath.sol",
     "exportedSymbols": {
-      "SafeMath": [981]
+      "SafeMath": [
+        981
+      ]
     },
     "id": 982,
     "license": "MIT",
@@ -3752,7 +3776,12 @@
     "nodes": [
       {
         "id": 671,
-        "literals": ["solidity", "^", "0.8", ".0"],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
         "nodeType": "PragmaDirective",
         "src": "33:23:4"
       },
@@ -3769,7 +3798,9 @@
         },
         "fullyImplemented": true,
         "id": 981,
-        "linearizedBaseContracts": [981],
+        "linearizedBaseContracts": [
+          981
+        ],
         "name": "SafeMath",
         "nameLocation": "406:8:4",
         "nodeType": "ContractDefinition",
@@ -3786,7 +3817,9 @@
                   "src": "643:124:4",
                   "statements": [
                     {
-                      "assignments": [685],
+                      "assignments": [
+                        685
+                      ],
                       "declarations": [
                         {
                           "constant": false,
@@ -4612,7 +4645,9 @@
                       }
                     },
                     {
-                      "assignments": [753],
+                      "assignments": [
+                        753
+                      ],
                       "declarations": [
                         {
                           "constant": false,
@@ -6629,7 +6664,10 @@
                           "id": 917,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [4294967278, 4294967278],
+                          "overloadedDeclarations": [
+                            4294967278,
+                            4294967278
+                          ],
                           "referencedDeclaration": 4294967278,
                           "src": "5035:7:4",
                           "typeDescriptions": {
@@ -6936,7 +6974,10 @@
                           "id": 942,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [4294967278, 4294967278],
+                          "overloadedDeclarations": [
+                            4294967278,
+                            4294967278
+                          ],
                           "referencedDeclaration": 4294967278,
                           "src": "5750:7:4",
                           "typeDescriptions": {
@@ -7243,7 +7284,10 @@
                           "id": 967,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [4294967278, 4294967278],
+                          "overloadedDeclarations": [
+                            4294967278,
+                            4294967278
+                          ],
                           "referencedDeclaration": 4294967278,
                           "src": "6626:7:4",
                           "typeDescriptions": {
@@ -7473,11 +7517,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.6+commit.11564f7e.Emscripten.clang"
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-08-07T22:29:43.465Z",
+  "updatedAt": "2021-08-08T15:35:21.393Z",
   "devdoc": {
     "details": "Wrappers over Solidity's arithmetic operations. NOTE: `SafeMath` is no longer needed starting with Solidity 0.8. The compiler now has built in overflow checking.",
     "kind": "dev",

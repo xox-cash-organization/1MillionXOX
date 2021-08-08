@@ -1,5 +1,5 @@
-const OneMillionXOX = artifacts.require("./OneMillionXOX.sol");
+const OneMillionXOX = artifacts.require("./AMillionXOX.sol");
 
 module.exports = function (deployer) {
-  deployer.deployer(OneMillionXOX);
+  deployer.deploy(OneMillionXOX);
 };
