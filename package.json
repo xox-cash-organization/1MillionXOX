@@ -23,7 +23,8 @@
   "homepage": "https://github.com/ONE-MILLION-XOX/1MillionXOX#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^4.2.0",
-    "@truffle/hdwallet-provider": "^1.4.3"
+    "@truffle/hdwallet-provider": "^1.4.3",
+    "fs": "^0.0.1-security"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",

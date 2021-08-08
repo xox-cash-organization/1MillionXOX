@@ -6519,39 +6519,19 @@
   "ast": {
     "absolutePath": "project:/contracts/1MillionXOX.sol",
     "exportedSymbols": {
-      "Context": [
-        669
-      ],
-      "ERC20": [
-        545
-      ],
-      "IERC20": [
-        623
-      ],
-      "IERC20Metadata": [
-        648
-      ],
-      "OneMillionXOX": [
-        1234
-      ],
-      "SafeMath": [
-        981
-      ]
+      "Context": [669],
+      "ERC20": [545],
+      "IERC20": [623],
+      "IERC20Metadata": [648],
+      "OneMillionXOX": [1234],
+      "SafeMath": [981]
     },
     "id": 1235,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 983,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.9",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.9", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:5"
       },
@@ -6599,13 +6579,7 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 1234,
-        "linearizedBaseContracts": [
-          1234,
-          545,
-          648,
-          623,
-          669
-        ],
+        "linearizedBaseContracts": [1234, 545, 648, 623, 669],
         "name": "OneMillionXOX",
         "nameLocation": "158:13:5",
         "nodeType": "ContractDefinition",
@@ -7076,9 +7050,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              74
-            ],
+            "baseFunctions": [74],
             "body": {
               "id": 1033,
               "nodeType": "Block",
@@ -7169,9 +7141,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              84
-            ],
+            "baseFunctions": [84],
             "body": {
               "id": 1049,
               "nodeType": "Block",
@@ -7361,9 +7331,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              98
-            ],
+            "baseFunctions": [98],
             "body": {
               "id": 1062,
               "nodeType": "Block",
@@ -7504,9 +7472,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              137
-            ],
+            "baseFunctions": [137],
             "body": {
               "id": 1079,
               "nodeType": "Block",
@@ -7700,9 +7666,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              158
-            ],
+            "baseFunctions": [158],
             "body": {
               "id": 1108,
               "nodeType": "Block",
@@ -8055,9 +8019,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              119
-            ],
+            "baseFunctions": [119],
             "body": {
               "id": 1126,
               "nodeType": "Block",
@@ -8135,9 +8097,7 @@
                       "id": 1119,
                       "name": "transferFrom",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        1233
-                      ],
+                      "overloadedDeclarations": [1233],
                       "referencedDeclaration": 1233,
                       "src": "1298:12:5",
                       "typeDescriptions": {
@@ -8284,9 +8244,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              206
-            ],
+            "baseFunctions": [206],
             "body": {
               "id": 1232,
               "nodeType": "Block",
@@ -8728,10 +8686,7 @@
                             "id": 1159,
                             "name": "require",
                             "nodeType": "Identifier",
-                            "overloadedDeclarations": [
-                              4294967278,
-                              4294967278
-                            ],
+                            "overloadedDeclarations": [4294967278, 4294967278],
                             "referencedDeclaration": 4294967278,
                             "src": "1518:7:5",
                             "typeDescriptions": {
@@ -9100,10 +9055,7 @@
                       "id": 1191,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "1678:7:5",
                       "typeDescriptions": {
@@ -9714,39 +9666,19 @@
   "legacyAST": {
     "absolutePath": "project:/contracts/1MillionXOX.sol",
     "exportedSymbols": {
-      "Context": [
-        669
-      ],
-      "ERC20": [
-        545
-      ],
-      "IERC20": [
-        623
-      ],
-      "IERC20Metadata": [
-        648
-      ],
-      "OneMillionXOX": [
-        1234
-      ],
-      "SafeMath": [
-        981
-      ]
+      "Context": [669],
+      "ERC20": [545],
+      "IERC20": [623],
+      "IERC20Metadata": [648],
+      "OneMillionXOX": [1234],
+      "SafeMath": [981]
     },
     "id": 1235,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 983,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.9",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.9", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:5"
       },
@@ -9794,13 +9726,7 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 1234,
-        "linearizedBaseContracts": [
-          1234,
-          545,
-          648,
-          623,
-          669
-        ],
+        "linearizedBaseContracts": [1234, 545, 648, 623, 669],
         "name": "OneMillionXOX",
         "nameLocation": "158:13:5",
         "nodeType": "ContractDefinition",
@@ -10271,9 +10197,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              74
-            ],
+            "baseFunctions": [74],
             "body": {
               "id": 1033,
               "nodeType": "Block",
@@ -10364,9 +10288,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              84
-            ],
+            "baseFunctions": [84],
             "body": {
               "id": 1049,
               "nodeType": "Block",
@@ -10556,9 +10478,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              98
-            ],
+            "baseFunctions": [98],
             "body": {
               "id": 1062,
               "nodeType": "Block",
@@ -10699,9 +10619,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              137
-            ],
+            "baseFunctions": [137],
             "body": {
               "id": 1079,
               "nodeType": "Block",
@@ -10895,9 +10813,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              158
-            ],
+            "baseFunctions": [158],
             "body": {
               "id": 1108,
               "nodeType": "Block",
@@ -11250,9 +11166,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              119
-            ],
+            "baseFunctions": [119],
             "body": {
               "id": 1126,
               "nodeType": "Block",
@@ -11330,9 +11244,7 @@
                       "id": 1119,
                       "name": "transferFrom",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        1233
-                      ],
+                      "overloadedDeclarations": [1233],
                       "referencedDeclaration": 1233,
                       "src": "1298:12:5",
                       "typeDescriptions": {
@@ -11479,9 +11391,7 @@
             "visibility": "public"
           },
           {
-            "baseFunctions": [
-              206
-            ],
+            "baseFunctions": [206],
             "body": {
               "id": 1232,
               "nodeType": "Block",
@@ -11923,10 +11833,7 @@
                             "id": 1159,
                             "name": "require",
                             "nodeType": "Identifier",
-                            "overloadedDeclarations": [
-                              4294967278,
-                              4294967278
-                            ],
+                            "overloadedDeclarations": [4294967278, 4294967278],
                             "referencedDeclaration": 4294967278,
                             "src": "1518:7:5",
                             "typeDescriptions": {
@@ -12295,10 +12202,7 @@
                       "id": 1191,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "1678:7:5",
                       "typeDescriptions": {
