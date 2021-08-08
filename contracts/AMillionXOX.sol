@@ -4,7 +4,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
 contract AMillionXOX is ERC20 {
-  uint public INITIAL_SUPPLY = 1000000;
+  uint public INITIAL_SUPPLY = 1000000 * 10 ** 18;
 
   mapping(address => uint) private balances;
   mapping(address => mapping(address => uint)) private allowed;
