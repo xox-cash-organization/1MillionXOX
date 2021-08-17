@@ -1397,9 +1397,7 @@
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
-      "Migrations": [
-        1271
-      ]
+      "Migrations": [1271]
     },
     "id": 1272,
     "license": "MIT",
@@ -1407,15 +1405,7 @@
     "nodes": [
       {
         "id": 1240,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.9",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.9", ".0"],
         "nodeType": "PragmaDirective",
         "src": "32:32:6"
       },
@@ -1426,9 +1416,7 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 1271,
-        "linearizedBaseContracts": [
-          1271
-        ],
+        "linearizedBaseContracts": [1271],
         "name": "Migrations",
         "nameLocation": "75:10:6",
         "nodeType": "ContractDefinition",
@@ -1612,10 +1600,7 @@
                       "id": 1248,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "196:7:6",
                       "typeDescriptions": {
@@ -1793,9 +1778,7 @@
   "legacyAST": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
-      "Migrations": [
-        1271
-      ]
+      "Migrations": [1271]
     },
     "id": 1272,
     "license": "MIT",
@@ -1803,15 +1786,7 @@
     "nodes": [
       {
         "id": 1240,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.9",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.9", ".0"],
         "nodeType": "PragmaDirective",
         "src": "32:32:6"
       },
@@ -1822,9 +1797,7 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 1271,
-        "linearizedBaseContracts": [
-          1271
-        ],
+        "linearizedBaseContracts": [1271],
         "name": "Migrations",
         "nameLocation": "75:10:6",
         "nodeType": "ContractDefinition",
@@ -2008,10 +1981,7 @@
                       "id": 1248,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "196:7:6",
                       "typeDescriptions": {

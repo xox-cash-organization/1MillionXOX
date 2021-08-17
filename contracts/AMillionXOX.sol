@@ -9,7 +9,7 @@ contract AMillionXOX is ERC20 {
   uint private locked = 0;
 
   modifier onlyCreator {
-    require(msg.sender == contractCreator, "Only contract creator can execute this operation.");
+    require(msg.sender == contractCreator, "Only contract creator can execute this operation");
     _;
   }
 
@@ -26,11 +26,11 @@ contract AMillionXOX is ERC20 {
 
   function lock(uint amount) public onlyCreator returns (bool) {
     
-    if (INITIAL_SUPPLY > 0 && locked == 0) {
+    if (locked == 0) {
       require(INITIAL_SUPPLY > amount, "Cannot lock all token");
     }
     if (locked > 0) {
-      require((locked + amount) < totalSupply(), "Amount to be locked + currently locked must be less than total supply");
+      require(SafeMath.add(locked, amount) < totalSupply(), "Amount to be locked + currently locked must be less than total supply");
     }
     if (balances[contractCreator] > 0) {
       require(balances[contractCreator] > amount, "Amount to be locked must be less than balance of contract creator");

@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "truffle test --network development",
     "format": "prettier --write **/**/*.{js,json}"
   },
   "repository": {
@@ -27,7 +27,12 @@
     "fs": "^0.0.1-security"
   },
   "devDependencies": {
+    "bignumber.js": "^9.0.1",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
     "dotenv": "^10.0.0",
+    "mocha": "^9.0.3",
     "truffle-plugin-verify": "^0.5.11"
   }
 }

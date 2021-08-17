@@ -14,9 +14,7 @@
   "ast": {
     "absolutePath": "@openzeppelin/contracts/utils/math/SafeMath.sol",
     "exportedSymbols": {
-      "SafeMath": [
-        981
-      ]
+      "SafeMath": [981]
     },
     "id": 982,
     "license": "MIT",
@@ -24,12 +22,7 @@
     "nodes": [
       {
         "id": 671,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "33:23:4"
       },
@@ -46,9 +39,7 @@
         },
         "fullyImplemented": true,
         "id": 981,
-        "linearizedBaseContracts": [
-          981
-        ],
+        "linearizedBaseContracts": [981],
         "name": "SafeMath",
         "nameLocation": "406:8:4",
         "nodeType": "ContractDefinition",
@@ -65,9 +56,7 @@
                   "src": "643:124:4",
                   "statements": [
                     {
-                      "assignments": [
-                        685
-                      ],
+                      "assignments": [685],
                       "declarations": [
                         {
                           "constant": false,
@@ -893,9 +882,7 @@
                       }
                     },
                     {
-                      "assignments": [
-                        753
-                      ],
+                      "assignments": [753],
                       "declarations": [
                         {
                           "constant": false,
@@ -2912,10 +2899,7 @@
                           "id": 917,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            4294967278,
-                            4294967278
-                          ],
+                          "overloadedDeclarations": [4294967278, 4294967278],
                           "referencedDeclaration": 4294967278,
                           "src": "5035:7:4",
                           "typeDescriptions": {
@@ -3222,10 +3206,7 @@
                           "id": 942,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            4294967278,
-                            4294967278
-                          ],
+                          "overloadedDeclarations": [4294967278, 4294967278],
                           "referencedDeclaration": 4294967278,
                           "src": "5750:7:4",
                           "typeDescriptions": {
@@ -3532,10 +3513,7 @@
                           "id": 967,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            4294967278,
-                            4294967278
-                          ],
+                          "overloadedDeclarations": [4294967278, 4294967278],
                           "referencedDeclaration": 4294967278,
                           "src": "6626:7:4",
                           "typeDescriptions": {
@@ -3766,9 +3744,7 @@
   "legacyAST": {
     "absolutePath": "@openzeppelin/contracts/utils/math/SafeMath.sol",
     "exportedSymbols": {
-      "SafeMath": [
-        981
-      ]
+      "SafeMath": [981]
     },
     "id": 982,
     "license": "MIT",
@@ -3776,12 +3752,7 @@
     "nodes": [
       {
         "id": 671,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "33:23:4"
       },
@@ -3798,9 +3769,7 @@
         },
         "fullyImplemented": true,
         "id": 981,
-        "linearizedBaseContracts": [
-          981
-        ],
+        "linearizedBaseContracts": [981],
         "name": "SafeMath",
         "nameLocation": "406:8:4",
         "nodeType": "ContractDefinition",
@@ -3817,9 +3786,7 @@
                   "src": "643:124:4",
                   "statements": [
                     {
-                      "assignments": [
-                        685
-                      ],
+                      "assignments": [685],
                       "declarations": [
                         {
                           "constant": false,
@@ -4645,9 +4612,7 @@
                       }
                     },
                     {
-                      "assignments": [
-                        753
-                      ],
+                      "assignments": [753],
                       "declarations": [
                         {
                           "constant": false,
@@ -6664,10 +6629,7 @@
                           "id": 917,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            4294967278,
-                            4294967278
-                          ],
+                          "overloadedDeclarations": [4294967278, 4294967278],
                           "referencedDeclaration": 4294967278,
                           "src": "5035:7:4",
                           "typeDescriptions": {
@@ -6974,10 +6936,7 @@
                           "id": 942,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            4294967278,
-                            4294967278
-                          ],
+                          "overloadedDeclarations": [4294967278, 4294967278],
                           "referencedDeclaration": 4294967278,
                           "src": "5750:7:4",
                           "typeDescriptions": {
@@ -7284,10 +7243,7 @@
                           "id": 967,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            4294967278,
-                            4294967278
-                          ],
+                          "overloadedDeclarations": [4294967278, 4294967278],
                           "referencedDeclaration": 4294967278,
                           "src": "6626:7:4",
                           "typeDescriptions": {
