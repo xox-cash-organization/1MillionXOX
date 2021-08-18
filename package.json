@@ -9,7 +9,8 @@
   "scripts": {
     "test": "truffle test --network development",
     "format": "prettier --write **/**/*.{js,json}",
-    "flatten": "flatten-sol contracts/AMillionXOX.sol"
+    "flatten": "truffle-flattener contracts/AMillionXOX.sol > AMillionXOXFlat.sol",
+    "deploy:matictest": "truffle migrate --network matic_test"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,7 @@
   },
   "homepage": "https://github.com/ONE-MILLION-XOX/1MillionXOX#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.2.0",
+    "@openzeppelin/contracts": "^4.3.0",
     "@truffle/hdwallet-provider": "^1.4.3",
     "fs": "^0.0.1-security"
   },
