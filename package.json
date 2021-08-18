@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "truffle test --network development",
-    "format": "prettier --write **/**/*.{js,json}"
+    "format": "prettier --write **/**/*.{js,json}",
+    "flatten": "flatten-sol contracts/AMillionXOX.sol"
   },
   "repository": {
     "type": "git",
