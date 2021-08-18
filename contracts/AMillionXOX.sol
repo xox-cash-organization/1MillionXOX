@@ -11,6 +11,7 @@ contract AMillionXOX is ERC20 {
 
   constructor() public ERC20("One Million XOX", "XOX") {
     balances[msg.sender] = INITIAL_SUPPLY;
+
     emit Transfer(address(0), msg.sender, INITIAL_SUPPLY);
   }
 
