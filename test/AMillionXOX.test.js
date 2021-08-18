@@ -15,12 +15,7 @@ contract("1MillionXOX", (accounts) => {
 
   it("should retrieve correct balance", async () => {
     const balance = await tokenContract.balanceOf.call(accounts[0]);
-    balance.toString().should.be.bignumber.equal(6e23);
-  });
-
-  it("should retrieve correct total locked amount", async () => {
-    const locked = await tokenContract.totalLocked();
-    locked.toString().should.be.bignumber.equal(4e23);
+    balance.toString().should.be.bignumber.equal(1e24);
   });
 
   it("should be able to transfer exact amount", async () => {
@@ -28,20 +23,5 @@ contract("1MillionXOX", (accounts) => {
     await tokenContract.transfer(accounts[1], amount, { from: accounts[0] });
     const balance = await tokenContract.balanceOf.call(accounts[1]);
     assert.equal(balance.valueOf(), amount);
-  });
-
-  it("only contract creator can lock tokens", async () => {
-    const toLock = 2000;
-    tokenContract
-      .lock(toLock, { from: accounts[1] })
-      .should.be.rejectedWith(
-        "Only contract creator can execute this operation"
-      );
-
-    await tokenContract.lock(toLock, { from: accounts[0] });
-    const totalLocked = await tokenContract.totalLocked();
-    const balance = await tokenContract.balanceOf.call(accounts[0]);
-    const totalSupply = totalLocked.add(balance);
-    assert.equal(totalSupply.valueOf(), 1e24);
   });
 });
