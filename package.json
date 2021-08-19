@@ -10,7 +10,8 @@
     "test": "truffle test --network development",
     "format": "prettier --write **/**/*.{js,json}",
     "flatten": "truffle-flattener contracts/AMillionXOX.sol > AMillionXOXFlat.sol",
-    "deploy:matictest": "truffle migrate --network matic_test"
+    "deploy:matictest": "truffle migrate --network matic_test",
+    "deploy:maticmain": "truffle migrate --network matic_main"
   },
   "repository": {
     "type": "git",
