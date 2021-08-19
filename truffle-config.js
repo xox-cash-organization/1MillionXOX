@@ -89,6 +89,18 @@ module.exports = {
       timeoutBlocks: 20000,
       skipDryRun: true,
       networkCheckTimeout: 20000
+    },
+    matic_main: {
+      provider: () =>
+        new HDWalletProvider(
+          process.env.PRIVATE_KEY,
+          "https://speedy-nodes-nyc.moralis.io/558120230227a848a2bb7043/polygon/mainnet"
+        ),
+      network_id: 137,
+      confirmations: 2,
+      timeoutBlocks: 20000,
+      skipDryRun: true,
+      networkCheckTimeout: 20000
     }
   },
 
