@@ -62,14 +62,26 @@ module.exports = {
     ropsten: {
       provider: () =>
         new HDWalletProvider(
-          mnemonic,
-          "https://ropsten.infura.io/v3/f9e72d0223644a4fa9a8807426b6dbef"
+          process.env.PRIVATE_KEY,
+          "https://speedy-nodes-nyc.moralis.io/558120230227a848a2bb7043/eth/ropsten"
         ),
       network_id: 3, // Ropsten's id
       gas: 5500000, // Ropsten has a lower block limit than mainnet
       confirmations: 2, // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
+      networkCheckTimeout: 200000
+    },
+    mainnet: {
+      provider: () =>
+        new HDWalletProvider(
+          process.env.PRIVATE_KEY,
+          "https://speedy-nodes-nyc.moralis.io/558120230227a848a2bb7043/eth/mainnet"
+        ),
+      network_id: 1,
+      confirmations: 2,
+      timeoutBlocks: 20000,
+      skipDryRun: true,
       networkCheckTimeout: 200000
     },
     // Useful for private networks
