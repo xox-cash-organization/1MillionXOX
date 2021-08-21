@@ -84,6 +84,18 @@ module.exports = {
       skipDryRun: true,
       networkCheckTimeout: 200000
     },
+    bscmainnet: {
+      provider: () =>
+        new HDWalletProvider(
+          process.env.PRIVATE_KEY,
+          "https://speedy-nodes-nyc.moralis.io/558120230227a848a2bb7043/bsc/mainnet"
+        ),
+      network_id: 56,
+      confirmations: 2,
+      timeoutBlocks: 20000,
+      skipDryRun: true,
+      networkCheckTimeout: 20000
+    },
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),

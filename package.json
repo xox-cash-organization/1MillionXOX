@@ -13,7 +13,8 @@
     "deploy:matictest": "truffle migrate --network matic_test",
     "deploy:maticmain": "truffle migrate --network matic_main",
     "deploy:ethmain": "truffle migrate --network mainnet",
-    "deploy:ropsten": "truffle migrate --network ropsten"
+    "deploy:ropsten": "truffle migrate --network ropsten",
+    "deploy:bscmainnet": "truffle migrate --network bscmainnet"
   },
   "repository": {
     "type": "git",
