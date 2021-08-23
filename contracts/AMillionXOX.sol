@@ -9,7 +9,7 @@ contract AMillionXOX is ERC20 {
   mapping(address => uint) private balances;
   mapping(address => mapping(address => uint)) private allowed;
 
-  constructor() public ERC20("One Million XOX", "XOX") {
+  constructor() public ERC20("One Million XOX", "XOXCASH") {
     balances[msg.sender] = INITIAL_SUPPLY;
 
     emit Transfer(address(0), msg.sender, INITIAL_SUPPLY);
