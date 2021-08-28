@@ -4,10 +4,10 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
 contract AMillionXOX is ERC20 {
-  uint public INITIAL_SUPPLY = 1000000 * 10 ** 18;
+  uint256 public INITIAL_SUPPLY = 1000000 * 10**18;
 
-  mapping(address => uint) private balances;
-  mapping(address => mapping(address => uint)) private allowed;
+  mapping(address => uint256) private balances;
+  mapping(address => mapping(address => uint256)) private allowed;
 
   constructor() public ERC20("One Million XOX", "XOXCASH") {
     balances[msg.sender] = INITIAL_SUPPLY;
@@ -19,32 +19,60 @@ contract AMillionXOX is ERC20 {
     return 18;
   }
 
-  function totalSupply() public view virtual override returns (uint) {
+  function totalSupply() public view virtual override returns (uint256) {
     return INITIAL_SUPPLY - balances[address(0)];
   }
 
-  function balanceOf(address owner) public view virtual override returns (uint256) {
+  function balanceOf(address owner)
+    public
+    view
+    virtual
+    override
+    returns (uint256)
+  {
     return balances[owner];
   }
 
-  function allowance(address owner, address spender) public view virtual override returns (uint remaining) {
+  function allowance(address owner, address spender)
+    public
+    view
+    virtual
+    override
+    returns (uint256 remaining)
+  {
     return allowed[owner][spender];
   }
 
-  function approve(address spender, uint spendable) public override returns (bool success) {
+  function approve(address spender, uint256 spendable)
+    public
+    override
+    returns (bool success)
+  {
     allowed[msg.sender][spender] = spendable;
     emit Approval(msg.sender, spender, spendable);
     return true;
   }
 
-  function transfer(address to, uint amount) public virtual override returns (bool transferred) {
+  function transfer(address to, uint256 amount)
+    public
+    virtual
+    override
+    returns (bool transferred)
+  {
     return transferFrom(msg.sender, to, amount);
   }
 
-  function transferFrom(address from, address to, uint amount) public override returns (bool) {
-    if (from != msg.sender && allowed[from][msg.sender] > uint(int(-1))) {
+  function transferFrom(
+    address from,
+    address to,
+    uint256 amount
+  ) public override returns (bool) {
+    if (from != msg.sender && allowed[from][msg.sender] > uint256(int256(-1))) {
       require(allowed[from][msg.sender] >= amount, "No approval given");
-      allowed[from][msg.sender] = SafeMath.sub(allowed[from][msg.sender], amount);
+      allowed[from][msg.sender] = SafeMath.sub(
+        allowed[from][msg.sender],
+        amount
+      );
     }
     require(balances[from] >= amount, "Not enough balance");
     balances[from] = SafeMath.sub(balances[from], amount);

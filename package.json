@@ -8,13 +8,14 @@
   },
   "scripts": {
     "test": "truffle test --network development",
-    "format": "prettier --write **/**/*.{js,json}",
+    "format": "prettier --write **/**/*.{js,json,sol}",
     "flatten": "truffle-flattener contracts/AMillionXOX.sol > AMillionXOXFlat.sol",
     "deploy:matictest": "truffle migrate --network matic_test",
     "deploy:maticmain": "truffle migrate --network matic_main",
     "deploy:ethmain": "truffle migrate --network mainnet",
     "deploy:ropsten": "truffle migrate --network ropsten",
-    "deploy:bscmainnet": "truffle migrate --network bscmainnet"
+    "deploy:bscmainnet": "truffle migrate --network bscmainnet",
+    "deploy:bsctestnet": "truffle migrate --network bsctestnet"
   },
   "repository": {
     "type": "git",
